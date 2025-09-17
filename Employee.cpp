@@ -1,9 +1,22 @@
 #include "Employee.h"
+#include <string>
+using namespace std;
 
-Employee::Employee(const std::string& name, int id, const std::string& type, 
-                   double payPerHour, double workedHours, double yearlyPayment)
+
+
+Employee::Employee(const string& name, int id, const string& type)
+    : name(name), id(id), type(type) 
 {
-  // TODO: 
+  // TODO:   done
 }
 
 /* IMPLEMENT GETTERS*/
+
+
+string Employee::getType(){
+  return type;
+}
+
+string Employee::getName(){
+  return name;
+}
