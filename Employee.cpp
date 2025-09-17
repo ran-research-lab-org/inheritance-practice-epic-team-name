@@ -2,17 +2,16 @@
 #include <string>
 using namespace std;
 
-Employee::Employee(const std::string& name, int id, const std::string& type, 
-                   double payPerHour, double workedHours, double yearlyPayment)
+
+
+Employee::Employee(const string& name, int id, const string& type)
+    : name(name), id(id), type(type) 
 {
   // TODO:   done
 }
 
 /* IMPLEMENT GETTERS*/
 
- double Employee::calculatePay(){
-
-}
 
 string Employee::getType(){
   return type;

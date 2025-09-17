@@ -16,8 +16,8 @@ protected:
 public:
 	// TODO: Constructor done
     Employee();
-    Employee(string name, int id, string type, double payPerHour,
-         double workedHours, double yearlyPayment);
+    Employee(const string& name, int id, const string& type);
+
 
     virtual ~Employee() {};
 

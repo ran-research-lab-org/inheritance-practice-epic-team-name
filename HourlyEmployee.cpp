@@ -1,21 +1,21 @@
 #include "HourlyEmployee.h"
 
-HourlyEmployee::HourlyEmployee(const std::string& name, int id, 
-                                double payPerHour, double workedHours)
+HourlyEmployee::HourlyEmployee(const string& name, int id, double payPerHour, double workedHours)
+    : Employee(name, id, "Hourly"), payPerHour(payPerHour), workedHours(workedHours) 
 {
     // TODO: 
 }
 /*TODO: calculate Payment DONE*/
 
 double HourlyEmployee::getPayPerHour(){
-    return PayPerHour;
+    return payPerHour;
 }
 
 double HourlyEmployee::getWorkedHours(){
     return workedHours;
 }
 
-double HourlyEmployee::calculatePay(){
+double HourlyEmployee::calculatePay()const{
     double payment = workedHours * payPerHour;
     return payment;// change to bi
 }
