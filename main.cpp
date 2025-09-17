@@ -38,12 +38,14 @@ void readFile(const string& filename, vector<HourlyEmployee>& hourlyEmployees, v
 int main() {
     
     /* TODO: Define two vectors: HourlyEmployee and SalariedEmployee */
-
+    vector <HourlyEmployee> hourlypeople;
+    vector <SalariedEmployee> salariedpeople;
     // TODO: Add vectors to readFile call, hourly first
-    readFile("employee_info.csv", , );
+    readFile("employee_info.csv", hourlypeople,salariedpeople );
     double result = 0;
 
     // TODO: Print the results
+    
     // Remember that you can use the range based for loop
     // Display the results of each type of employee
 

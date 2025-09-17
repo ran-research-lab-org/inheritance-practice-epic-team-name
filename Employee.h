@@ -3,6 +3,7 @@
 #define EMPLOYEE_H
 
 #include <string>
+using namespace std;
 
 class Employee {
 // Attributes
@@ -13,14 +14,20 @@ protected:
 
 // Methods
 public:
-	// TODO: Constructor
+	// TODO: Constructor done
+    Employee();
+    Employee(string name, int id, string type, double payPerHour,
+         double workedHours, double yearlyPayment);
 
-    virtual ~Employee() {}
+    virtual ~Employee() {};
 
     // Virtual function to calculate payment
     virtual double calculatePay() const = 0;
 
-    // TODO: Getters
+    // TODO: Getters    done
+    string getType();
+    string getName();
+
 };
 
 #endif
